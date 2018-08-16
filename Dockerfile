@@ -138,4 +138,4 @@ EXPOSE 3128/tcp
 
 USER squid
 
-CMD ["sh", "-c", "/usr/sbin/squid -f ${SQUID_CONFIG_FILE} -z && exec /usr/sbin/squid -f ${SQUID_CONFIG_FILE} -NYCd 1"]
+CMD ["sh", "-c", "/usr/sbin/squid -f ${SQUID_CONFIG_FILE} -z && exec /usr/sbin/squid -f ${SQUID_CONFIG_FILE} -NCd 1"]
